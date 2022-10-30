@@ -15,7 +15,7 @@
       "function": {
         "alphabackendlambda": {
           "deploymentBucketName": "amplify-alphabackend-dev-124815-deployment",
-          "s3Key": "amplify-builds/alphabackendlambda-7a384268457555476275-build.zip"
+          "s3Key": "amplify-builds/alphabackendlambda-79327174794d58365166-build.zip"
         }
       },
       "api": {
