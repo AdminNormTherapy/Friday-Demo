@@ -1,39 +1,19 @@
 {
-  "storage": {
-    "fridaydynamodbalpha": {
-      "service": "DynamoDB",
-      "providerPlugin": "awscloudformation"
-    }
-  },
   "function": {
-    "alpharestapilambda": {
+    "alphabackendlambda": {
       "build": true,
       "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "storage",
-          "resourceName": "fridaydynamodbalpha",
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "attributeEnvMap": {
-            "Name": "TABLE_NAME",
-            "Arn": "TABLE_ARN"
-          }
-        }
-      ]
+      "service": "Lambda"
     }
   },
   "api": {
-    "Alpharestapi": {
+    "apid023def6": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "alpharestapilambda",
+          "resourceName": "alphabackendlambda",
           "attributes": [
             "Name",
             "Arn"

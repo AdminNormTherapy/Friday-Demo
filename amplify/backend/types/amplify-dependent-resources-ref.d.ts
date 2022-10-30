@@ -1,16 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
-    "storage": {
-        "fridaydynamodbalpha": {
-            "Name": "string",
-            "Arn": "string",
-            "StreamArn": "string",
-            "PartitionKeyName": "string",
-            "PartitionKeyType": "string",
-            "Region": "string"
-        }
-    },
     "function": {
-        "alpharestapilambda": {
+        "alphabackendlambda": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
@@ -18,7 +8,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "api": {
-        "Alpharestapi": {
+        "apid023def6": {
             "RootUrl": "string",
             "ApiName": "string",
             "ApiId": "string"

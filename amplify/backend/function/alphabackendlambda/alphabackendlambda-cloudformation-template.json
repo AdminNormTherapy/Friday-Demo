@@ -15,14 +15,6 @@
     },
     "s3Key": {
       "Type": "String"
-    },
-    "storagefridaydynamodbalphaName": {
-      "Type": "String",
-      "Default": "storagefridaydynamodbalphaName"
-    },
-    "storagefridaydynamodbalphaArn": {
-      "Type": "String",
-      "Default": "storagefridaydynamodbalphaArn"
     }
   },
   "Conditions": {
@@ -55,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "alpharestapilambda",
+            "alphabackendlambda",
             {
               "Fn::Join": [
                 "",
                 [
-                  "alpharestapilambda",
+                  "alphabackendlambda",
                   "-",
                   {
                     "Ref": "env"
@@ -97,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "alphademoapiLambdaRole729348e2",
+            "alphabackendLambdaRole28643153",
             {
               "Fn::Join": [
                 "",
                 [
-                  "alphademoapiLambdaRole729348e2",
+                  "alphabackendLambdaRole28643153",
                   "-",
                   {
                     "Ref": "env"
@@ -168,34 +160,6 @@
                   }
                 ]
               }
-            },
-            {
-              "Effect": "Allow",
-              "Action": [
-                "dynamodb:DescribeTable",
-                "dynamodb:GetItem",
-                "dynamodb:Query",
-                "dynamodb:Scan",
-                "dynamodb:PutItem",
-                "dynamodb:UpdateItem",
-                "dynamodb:DeleteItem"
-              ],
-              "Resource": [
-                {
-                  "Ref": "storagefridaydynamodbalphaArn"
-                },
-                {
-                  "Fn::Join": [
-                    "/",
-                    [
-                      {
-                        "Ref": "storagefridaydynamodbalphaArn"
-                      },
-                      "index/*"
-                    ]
-                  ]
-                }
-              ]
             }
           ]
         }
