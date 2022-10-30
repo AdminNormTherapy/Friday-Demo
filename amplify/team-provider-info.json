@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-alphademoapi-dev-14536-authRole",
+      "UnauthRoleArn": "arn:aws:iam::619464233190:role/amplify-alphademoapi-dev-14536-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::619464233190:role/amplify-alphademoapi-dev-14536-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-alphademoapi-dev-14536-deployment",
+      "UnauthRoleName": "amplify-alphademoapi-dev-14536-unauthRole",
+      "StackName": "amplify-alphademoapi-dev-14536",
+      "StackId": "arn:aws:cloudformation:us-east-1:619464233190:stack/amplify-alphademoapi-dev-14536/14f0e5d0-5816-11ed-a7d6-0a9124fcd5e9",
+      "AmplifyAppId": "d2wrt8dnrx5fri"
+    },
+    "categories": {
+      "function": {
+        "alpharestapilambda": {
+          "deploymentBucketName": "amplify-alphademoapi-dev-14536-deployment",
+          "s3Key": "amplify-builds/alpharestapilambda-77756c30517169307472-build.zip"
+        }
+      },
+      "storage": {
+        "fridaydynamodbalpha": {}
+      },
+      "api": {
+        "Alpharestapi": {}
+      }
+    }
+  }
+}
